@@ -1,3 +1,15 @@
+EOI version, published as [vue-draggable-resizable-eoi](https://www.npmjs.com/package/vue-draggable-resizable-eoi)
+
+[![Latest Version on NPM](https://img.shields.io/npm/v/vue-draggable-resizable-eoi.svg?style=flat-square)](https://npmjs.com/package/vue-draggable-resizable-eoi)
+
+What's improved:
+
+1. Fix some silly errors. eg: https://github.com/mauricius/vue-draggable-resizable/issues/280
+1. Boundle `.css` into `.vue`. Previously the `.css` file must be loaded manually, which is problematic because of the lacking of css scoping. The class names defined in [vue-dragable-resizable.css](https://github.com/CarterLi/vue-draggable-resizable/blob/master/src/components/vue-draggable-resizable.css) is not prefixed which is likely to conflict with user defined classes
+1. Use ResizeObserver instead of listening window `resize` event, which is MUCH more accurate
+
+---
+
 <p align="center"><img src="https://rawgit.com/mauricius/vue-draggable-resizable/v1/docs/resources/logo.png" alt="logo"></p>
 <h1 align="center">VueDraggableResizable 2</h1>
 
